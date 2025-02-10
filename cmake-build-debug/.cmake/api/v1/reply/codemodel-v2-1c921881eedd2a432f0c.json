@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Msi/Desktop/negozio di dischi/cmake-build-debug",
-		"source" : "C:/Users/Msi/Desktop/negozio di dischi"
+		"build" : "C:/Users/zelak/CLionProjects/negozio-di-dischi/cmake-build-debug",
+		"source" : "C:/Users/zelak/CLionProjects/negozio-di-dischi"
 	},
 	"version" : 
 	{
