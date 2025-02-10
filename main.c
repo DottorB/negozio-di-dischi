@@ -3,8 +3,6 @@ divisi tutti tramite titolo, nome, autore o gruppo a cui appartengono.
 Ci sarà la possibilità di inserire dischi nuovi, visualizzare quelli presenti di
 uno stesso autore o gruppo e cercare nell'archivio il disco più costoso.*/
 #include<stdio.h>
-#include<string.h>
-#include<stdlib.h>
 #include "header.h"
 
 
