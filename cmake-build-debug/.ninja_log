@@ -1,8 +1,15 @@
 # ninja log v6
-5	107	7609118528945017	CMakeFiles/negozio_di_dischi.dir/main.c.obj	caf3dc2fce6ebde1
-107	188	7609118529962282	negozio_di_dischi.exe	91eec6e29023d167
-3	110	7609139186821640	CMakeFiles/negozio_di_dischi.dir/main.c.obj	caf3dc2fce6ebde1
-6	121	7609139186861525	CMakeFiles/negozio_di_dischi.dir/haider.c.obj	aa1b9090f3209a5e
 5	96	7609140553137586	CMakeFiles/negozio_di_dischi.dir/main.c.obj	caf3dc2fce6ebde1
-12	104	7609140553207398	CMakeFiles/negozio_di_dischi.dir/haider.c.obj	aa1b9090f3209a5e
 104	170	7609140554124929	negozio_di_dischi.exe	1ad84734a525cd24
+5	56	7609756744243069	CMakeFiles/negozio_di_dischi.dir/main.c.obj	caf3dc2fce6ebde1
+9	78	7609756744282956	CMakeFiles/negozio_di_dischi.dir/header.c.obj	e6b5e19c2e7c19d4
+78	138	7609756744972634	negozio_di_dischi.exe	e241bf01db8c49df
+4	55	7609758227097614	CMakeFiles/negozio_di_dischi.dir/main.c.obj	caf3dc2fce6ebde1
+6	64	7609758227127475	CMakeFiles/negozio_di_dischi.dir/header.c.obj	e6b5e19c2e7c19d4
+64	123	7609758227710806	negozio_di_dischi.exe	e241bf01db8c49df
+4	62	7609760644226336	CMakeFiles/negozio_di_dischi.dir/header.c.obj	e6b5e19c2e7c19d4
+63	127	7609760644814184	negozio_di_dischi.exe	e241bf01db8c49df
+6	51	7609762487443274	CMakeFiles/negozio_di_dischi.dir/main.c.obj	caf3dc2fce6ebde1
+51	111	7609762487894806	negozio_di_dischi.exe	e241bf01db8c49df
+4	54	7609764730307874	CMakeFiles/negozio_di_dischi.dir/main.c.obj	caf3dc2fce6ebde1
+54	117	7609764730802543	negozio_di_dischi.exe	e241bf01db8c49df

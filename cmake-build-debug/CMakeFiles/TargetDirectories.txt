@@ -1,3 +1,3 @@
-C:/Users/zelak/CLionProjects/negozio-di-dischi/cmake-build-debug/CMakeFiles/negozio_di_dischi.dir
-C:/Users/zelak/CLionProjects/negozio-di-dischi/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/zelak/CLionProjects/negozio-di-dischi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Msi/Desktop/negozio di dischi/cmake-build-debug/CMakeFiles/negozio_di_dischi.dir
+C:/Users/Msi/Desktop/negozio di dischi/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Msi/Desktop/negozio di dischi/cmake-build-debug/CMakeFiles/rebuild_cache.dir
