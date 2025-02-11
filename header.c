@@ -1,6 +1,5 @@
 #include<stdio.h>
 #include<string.h>
-#include<stdlib.h>
 #include "header.h"
 
 
@@ -16,7 +15,7 @@ disco archivio[100] = {
 
 
 void aggiungi_disco(int *disco_nuovo, int *n_codice) {
-    //se sono minori di 100 allora si possono aggiungere
+    //se i dischi sono minori di 100 allora si possono aggiungere
     if (*disco_nuovo < 100) {
         printf("Inserisci il titolo del disco \n");
         fgets(archivio[*disco_nuovo].titolo, 50,stdin);
@@ -39,16 +38,16 @@ void aggiungi_disco(int *disco_nuovo, int *n_codice) {
     }
 }
 
-//assegna automaticamente il codice ad un disco
+//assegna automaticamente il codice a un disco
 void assegna_codice(int *n_codice, int *disco_nuovo) {
     char scelta;
 
-    archivio[*disco_nuovo].codice = *n_codice; //aumenta il putatore legato al numero del codice
+    archivio[*disco_nuovo].codice = *n_codice; //aumenta il puntatore legato al numero del codice
 
     printf("il codice del disco e' %d \n", *n_codice);
 
     (*n_codice)++;
-} //permette la visualizzazione di tutti i disci presenti nell'archivio
+} //permette la visualizzazione di tutti i dischi presenti nell'archivio
 void visualizza_dischi(int *disco_nuovo) {
     //tramite due cicli annidati divido i dischi per autore o band
     for (int i = 0; i < *disco_nuovo; i++) {
@@ -80,7 +79,7 @@ void visualizza_dischi(int *disco_nuovo) {
 }
 
 //fuznione che permette di "noleggiare" un disco se è presente
-void preleva_disco(int trovato, int *disco_nuovo) {
+void preleva_disco(int trovato, int *disco) {
     char nome_disco[50];
 
     printf("inserire il nome del disco da noleggiare \n");
@@ -91,7 +90,7 @@ void preleva_disco(int trovato, int *disco_nuovo) {
 
     trovato = 0;
 
-    for (int i = 0; i < *disco_nuovo; i++) {
+    for (int i = 0; i < *disco; i++) {
         //tramite strcmp si controlla se il disco scritto corrisponda a quello dell'archivio
         if (strcmp(nome_disco, archivio[i].titolo) == 0) {
             trovato = 1;
@@ -113,14 +112,14 @@ void preleva_disco(int trovato, int *disco_nuovo) {
     {
         printf("disco non trovato, riprovi per favore \n");
 
-        preleva_disco(trovato, disco_nuovo);
+        preleva_disco(trovato, disco);
     }
 }
 
 //funzione che confronta tutti i dischi per trovare il più costsoso tramite un approccio ricorsivo e incrementale
-void piu_costoso(int *disco_nuovo, int indice, int *indice_max, float *max_costo) {
+void piu_costoso(int *disco, int indice, int *indice_max, float *max_costo) {
     //esaminati tutti i dischi presenta il messaggio con il disco più costoso
-    if (indice == *disco_nuovo) {
+    if (indice == *disco) {
         printf("il disco con il costo maggiore e' %s ", archivio[*indice_max].titolo);
 
         printf("con il costo di %.2f \n", *max_costo);
@@ -129,9 +128,9 @@ void piu_costoso(int *disco_nuovo, int indice, int *indice_max, float *max_costo
     if (archivio[indice].costo_prestito > *max_costo) {
         //sostituisco l'indice
         *indice_max = indice;
-        //sostitusisco il costo
+        //sostituisco il costo
         *max_costo = archivio[indice].costo_prestito;
     }
     //tramite chiamata ricorsiva aumento l'indice fino a quando non finiscono i cofronti
-    piu_costoso(disco_nuovo, indice + 1, indice_max, max_costo);
+    piu_costoso(disco, indice + 1, indice_max, max_costo);
 }

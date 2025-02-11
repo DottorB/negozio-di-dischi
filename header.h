@@ -19,7 +19,7 @@ typedef struct {
     float costo_prestito;
     //array di numeri per l'assegnazione del codice
     int codice;
-    //array di numeri che indica la disponbilità di un disco
+    //array di numeri che indica la disponibilità di un disco
     int disponibile;
 } disco;
 

@@ -14,8 +14,8 @@ int main() {
 
     printf("Benvenuto nel negozio di dischi di Enrico Bucci \n");
 
-    int disco_nuovo = 6; //rappresenta i dischi presenti
-    int n_codice = disco_nuovo + 1; //rappresenta il codice (che parte da 1 e non da 0)
+    int disco = 6; //rappresenta i dischi presenti
+    int n_codice = disco++ ; //rappresenta il codice
     int trovato, massimo;
     //rappresenta una variabile che userò nel noleggio e una per la classificazione del disco più costoso
     int continua = 1; //rappresenta una variabile che permette di fare più operazioni
@@ -36,13 +36,13 @@ int main() {
         getchar();
         //utilizzo uno switch per la selezione delle operazioni
         switch (scelta_operazione) {
-            case 1: aggiungi_disco(&disco_nuovo, &n_codice);
+            case 1: aggiungi_disco(&disco, &n_codice);
                 break;
-            case 2: visualizza_dischi(&disco_nuovo);
+            case 2: visualizza_dischi(&disco);
                 break;
-            case 3: preleva_disco(trovato, &disco_nuovo);
+            case 3: preleva_disco(trovato, &disco);
                 break;
-            case 4: piu_costoso(&disco_nuovo, indice, &indice_max, &max_costo);
+            case 4: piu_costoso(&disco, indice, &indice_max, &max_costo);
                 break;
             default: printf("Operazione non valida. Riprova.\n");
                 break;
